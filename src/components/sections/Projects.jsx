@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import eventraImage from "../../assets/images/Eventra.png"
 import ecomImage from "../../assets/images/Ecom.png"
+import showhopImage from "../../assets/images/ShowHop.png"
 
 const Projects = () => {
   const projects = [
@@ -34,6 +35,27 @@ const Projects = () => {
     },
     {
       number: "02",
+      title: "ShowHop — Movie Booking Platform",
+      description:
+        "A full-stack movie ticket booking platform featuring movie discovery, search, reviews, theatre and showtime listings, interactive seat selection, secure authentication, and booking management with a countdown timer.",
+      technologies: [
+        "Java", "Spring Boot", "React.js", "PostgreSQL", "Spring Data JPA", "Spring Security", "JWT", "Tailwind CSS",
+      ],
+      image: showhopImage,
+      githubLinks: [
+        {
+          label: "Frontend",
+          url: "https://github.com/saloniwarang20/showhop-frontend",
+        },
+        {
+          label: "Backend",
+          url: "https://github.com/saloniwarang20/showhop-backend",
+        },
+      ],
+      live: "https://showhop-frontend.vercel.app/",
+    },
+    {
+      number: "03",
       title: "Eventra",
       description:
         "A collaborative event management platform for creating and managing events, coordinating volunteers, communicating with participants and tracking tasks.",
